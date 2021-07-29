@@ -262,6 +262,7 @@
 #include "sql/engine/expr/ob_expr_format.h"
 #include "sql/engine/expr/ob_expr_quarter.h"
 #include "sql/engine/expr/ob_expr_bit_length.h"
+#include "sql/engine/expr/ob_expr_convert_tz.h"
 
 using namespace oceanbase::common;
 namespace oceanbase {
@@ -547,6 +548,7 @@ void ObExprOperatorFactory::register_expr_operators()
   REG_OP(ObExprCharset);
   REG_OP(ObExprCollation);
   REG_OP(ObExprCoercibility);
+  REG_OP(ObExprConvertTZ);
   REG_OP(ObExprSetCollation);
   REG_OP(ObExprReverse);
   REG_OP(ObExprRight);

@@ -562,7 +562,7 @@ typedef enum ObItemType {
   T_FUN_KEEP_WM_CONCAT = 1578,
   T_FUN_WM_CONCAT = 1579,
   ///< @note add new oracle only function type before this line
-
+  T_FUN_SYS_CONVERT_TZ = 1580,
   T_FUN_SYS_END = 2000,
 
   T_MAX_OP = 3000,
