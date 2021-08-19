@@ -21,7 +21,6 @@ namespace oceanbase
 {
 namespace common
 {
-using namespace ::oblib;
 
 constexpr int OB_LAST_ERROR_CODE = -38105;
 constexpr int OB_ERR_SQL_START = -5000;
