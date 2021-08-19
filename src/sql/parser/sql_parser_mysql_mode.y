@@ -8911,6 +8911,7 @@ WITH with_list
   ParseNode *with_list = NULL;
   merge_nodes(with_list, result, T_WITH_CLAUSE_LIST, $2);
   $$ = with_list;
+  $$->value_ = 0;
 }
 | 
 WITH RECURSIVE with_list
@@ -8918,11 +8919,13 @@ WITH RECURSIVE with_list
   ParseNode *with_list = NULL;
   merge_nodes(with_list, result, T_WITH_CLAUSE_LIST, $3);
   $$ = with_list;
+  $$->value_ = 1;
 }/*
 |
 WITH RECURSIVE common_table_expr
 {
   $$ = $3;
+  $$->value_ = 0;
 }*/
 ;
 
